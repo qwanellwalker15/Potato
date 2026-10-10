@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font: 14px "Lato", sans-serif;
+  color: #2d3748;
+  text-align: center;
+}
+
+a { text-decoration: none; }
+
+/* Header */
+header {
+  min-height: 660px;
+  color: #ffffff;
+  background: radial-gradient(ellipse at center,
+    rgba(168, 197, 218, 1) 0%,
+    rgba(168, 197, 218, 1) 59%,
+    rgba(130, 162, 186, 1) 100%);
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 50px 0 26px;
+}
+.brand { font-size: 22px; font-weight: 900; color: #ffffff; }
+nav { display: flex; align-items: center; }
+nav a {
+  margin-left: 24px;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+nav a.buy {
+  padding: 10px 14px;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  transition: background-color .3s, border-color .3s;
+}
+nav a.buy:hover { background: rgba(45, 70, 95, .55); border-color: transparent; }
+
+header h1 {
+  margin: 145px 0 0;
+  font-size: 44px;
+  font-weight: 400;
+}
+header p {
+  margin: 20px 0 0;
+  font-size: 14px;
+  font-weight: 300;
+}
+.hero-img { display: block; margin: 55px auto 0; max-width: 100%; }
+
+/* Shapes */
+.shapes {
+  padding: 150px 0 160px;
+  background: url("images/blurred-potatoes.jpg") center / cover no-repeat, #ffffff;
+}
+.shapes h2, .order h2 {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 300;
+}
+.shapes p {
+  width: 460px;
+  margin: 10px auto 30px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* Order */
+.order { padding: 40px 0 50px; background: #f7fafc; }
+.plans {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.plan {
+  width: 273px;
+  padding: 0 10px 40px;
+  border-right: 1px solid #718096;
+  font-weight: 300;
+}
+.plan:first-child { border-left: none; }
+.plan:last-child { border-right: 1px solid #718096; }
+.plan h3 { margin: 0 0 24px; font-size: 25px; font-weight: 300; }
+.plan ul { margin: 0 0 18px; padding: 0; list-style: none; }
+.plan li { margin-bottom: 21px; font-size: 14px; }
+
+.order-btn {
+  display: inline-block;
+  padding: 6px 20px;
+  font: 400 17px Arial, sans-serif;
+  text-transform: uppercase;
+  color: #319795;
+  border: 2px solid #319795;
+  border-radius: 20px;
+  transition: background-color .3s, color .3s;
+}
+.order-btn:hover { background: #319795; color: #ffffff; }
+.plan small { display: block; margin: 8px 0 40px; font-size: 11px; font-weight: 400; }
+.plan img { max-width: 100%; }
+
+/* Footer */
+footer {
+  padding: 18px 0;
+  font-weight: 700;
+  color: #ffffff;
+  background: #4a5568;
+}
